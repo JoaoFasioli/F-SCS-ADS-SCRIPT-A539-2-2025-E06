@@ -161,11 +161,26 @@ img {
 /* 3 R's */
 .branch-wrap {
     position: relative;
-    background: var(--surface);
+    background: url("./assets/branchWrapBackground.jpg") center/cover no-repeat;
     border: 1px solid var(--border);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
     border-radius: .75rem;
     padding: .75rem;
     overflow: hidden
+}
+
+.branch-wrap::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(190, 209, 197, 0.69), rgba(212, 208, 191, 0.89));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.branch-wrap > * {
+    position: relative;
+    z-index: 2;
 }
 
 .branch {
@@ -179,12 +194,12 @@ img {
     cursor: pointer
 }
 
-.leaf:focus-visible ellipse {
+.leaf:focus-visible .shape, .leaf:focus-visible ellipse {
     stroke: #fff;
     stroke-width: 3
 }
 
-.leaf:hover ellipse {
+.leaf:hover .shape, .leaf:hover ellipse {
     fill: #2a5736
 }
 
