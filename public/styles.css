@@ -97,7 +97,7 @@ img {
     border: 1px solid var(--primary);
     color: #fff;
     padding: .6rem .9rem;
-    border-radius: .5rem;
+    border-radius: 5.5em;
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
@@ -459,4 +459,36 @@ img {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0
+}
+
+
+/* 3 R's — resultado com imagem ao lado */
+.r-desc .r-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(140px, 220px);
+    gap: 1rem;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+}
+
+.r-copy {
+    margin-right: 10rem;
+}
+
+.r-desc .r-fig img {
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+    border-radius: .5rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .1)
+}
+
+@media (max-width: 640px) {
+    .r-desc .r-grid {
+        grid-template-columns: 1fr
+    }
+
+    .r-desc .r-fig {
+        justify-self: start
+    }
 }

@@ -8,15 +8,15 @@ function qsa(sel, el=document){return [...el.querySelectorAll(sel)]}
 const textosR = {
   1: {
     titulo: "R1 — Reduzir",
-    texto: "Repensar hábitos para consumir menos recursos desde a origem. Preferir produtos duráveis, evitar desperdícios e otimizar o uso de energia, água e materiais."
+    texto: "Este precisa ser sua maior prioridade. Diminua o consumo desnecessário e a geração de resíduos no cotidiano."
   },
   2: {
     titulo: "R2 — Reutilizar",
-    texto: "Dar nova vida ao que já existe: consertar, reaproveitar embalagens e compartilhar objetos antes de pensar em descartar."
+    texto: "Estenda a vida útil dos produtos dando novos usos aos seus materiais, mas apenas quando não for possível reduzir."
   },
   3: {
     titulo: "R3 — Reciclar",
-    texto: "Separar corretamente e encaminhar os materiais para reciclagem, devolvendo matéria-prima ao ciclo produtivo e reduzindo impactos ambientais."
+    texto: "Transforme resíduos em novos produtos através da reciclagem, mas apenas quando não for possível reutilizar."
   }
 }
 
@@ -27,7 +27,7 @@ function setupRButtons(){
       const r = leaf.getAttribute('data-r')
       const t = textosR[r]
       if(!t) return
-      desc.innerHTML = `<div class="r-title">${t.titulo}</div><p>${t.text}</p><div style="margin-top:.5rem"><a href="#" class="primary" role="button">Saiba Mais</a></div>`
+      desc.innerHTML = `<div class="r-grid"><div class="r-copy"><div class="r-title">${t.titulo}</div><p>${t.texto}</p><div style="margin-top:.5rem"><a href="#" class="primary" role="button">Saiba Mais</a></div></div><div class="r-fig"><img src="./assets/Rpyramid.png" alt="Pirâmide dos 3 R's: prioridade para Reduzir, depois Reutilizar e por último Reciclar."></div></div>`
       desc.classList.add('show')
     }
     leaf.addEventListener('click', activate)
@@ -66,7 +66,7 @@ function setupAssistant(){
     }
     // gera uma resposta curta simulada
     const mapa = {reduzir:'reduzir o consumo', reutilizar:'reutilizar o material', reciclar:'reciclar corretamente'}
-    resp.textContent = `Você escolheu ${mapa[intent]} para "${material}". Veja dicas iniciais e aprofunde no link completo.`
+    resp.textContent = `Você escolheu ${mapa[intent]} para "${material}".\n Veja dicas iniciais e aprofunde no link completo.`
     panes.style.transform = 'translateX(-50%)'
   })
 
