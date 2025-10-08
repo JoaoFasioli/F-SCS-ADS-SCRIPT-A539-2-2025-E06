@@ -66,7 +66,7 @@ function setupAssistant(){
     }
     // gera uma resposta curta simulada
     const mapa = {reduzir:'reduzir o consumo', reutilizar:'reutilizar o material', reciclar:'reciclar corretamente'}
-    resp.textContent = `Você escolheu ${mapa[intent]} para "${material}".\n Veja dicas iniciais e aprofunde no link completo.`
+    resp.textContent = `Você escolheu ${mapa[intent]} para "${material}".\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel metus orci. Cras nec metus dui. Fusce interdum risus ut nisi dictum bibendum. Aliquam eu iaculis lectus. Curabitur eros arcu, porttitor ut tellus vitae, varius sollicitudin metus. Fusce iaculis congue leo, a pretium ante aliquet eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam et condimentum nunc.`
     panes.style.transform = 'translateX(-50%)'
   })
 

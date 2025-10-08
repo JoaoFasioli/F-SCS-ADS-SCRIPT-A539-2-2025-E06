@@ -158,6 +158,12 @@ img {
     width: 60%;
 }
 
+.rs-section {
+    margin-top: 2.5rem;
+    box-shadow: 0 0 10px rgba(40, 76, 43, 0.2);
+    padding: 2rem;
+}
+
 /* 3 R's */
 .branch-wrap {
     position: relative;
@@ -227,6 +233,8 @@ img {
 
 /* Destaques */
 .destaque-section {
+    box-shadow: 0 0 10px rgba(40, 76, 43, 0.2);
+    padding: 2rem;
     margin-top: 2.5rem
 }
 
@@ -266,12 +274,13 @@ img {
 }
 
 .card {
+    box-shadow: 0 0 10px rgba(40, 76, 43, 0.1);
     flex: 0 0 320px;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: .9rem;
+    border-radius: 2.5rem;
     padding: 1rem;
-    scroll-snap-align: start
+    scroll-snap-align: start;
 }
 
 .card-title {
@@ -284,19 +293,21 @@ img {
     justify-content: space-between;
     color: var(--muted);
     font-size: .9rem;
-    margin-bottom: .6rem
+    margin-bottom: .6rem;
+    gap: 2rem;
 }
 
 .card-body {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     grid-template-columns:96px 1fr;
     gap: .75rem;
-    align-items: start
 }
 
 .thumb {
-    width: 96px;
-    height: 72px;
+    width: 120px;
+    height: 120px;
     border-radius: .5rem;
     object-fit: cover;
     background: #e2e8f0
@@ -321,6 +332,8 @@ img {
 
 /* Assistente */
 .assistant-section {
+    box-shadow: 0 0 10px rgba(40, 76, 43, 0.2);
+    padding: 2rem;
     margin-top: 2.5rem
 }
 
@@ -357,8 +370,9 @@ img {
 .toggle {
     background: #f8fafc;
     border: 1px solid var(--border);
+    width: fit-content;
     padding: .55rem .7rem;
-    border-radius: .5rem;
+    border-radius: 2rem;
     text-align: left;
     cursor: pointer
 }
@@ -368,9 +382,10 @@ img {
 }
 
 .toggle.selected {
-    background: var(--primary-50);
-    border-color: var(--primary);
-    color: #0f3d18
+    background: var(--primary);
+    border-color: var(--primary-50);
+    color: var(--primary-50);
+    text-shadow: 0 0 2px rgba(245, 233, 233, 0.77)
 }
 
 .ask {
@@ -389,16 +404,19 @@ img {
 
 .actions {
     display: flex;
-    gap: .75rem;
-    margin-top: .75rem
+    flex-direction: row;
+    padding: 5px;
+    gap: 50px;
+    margin: .75rem 50px .75rem 50px;
 }
 
 .answer {
-    background: linear-gradient(0deg, #fafafa, #fff)
+    background: linear-gradient(0deg, #fafafa, #fff);
 }
 
 .answer-text {
-    margin-top: .5rem
+    margin-top: .5rem;
+    white-space: pre-line;
 }
 
 /* Footer */
