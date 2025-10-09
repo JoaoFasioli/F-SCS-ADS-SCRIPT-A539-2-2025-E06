@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem Usado — Post</title>
+  <meta name="description" content="Post aberto do Bem Usado: exemplo de conteúdo com barra flutuante de ações.">
+  <meta name="keywords" content="post,sustentabilidade,3Rs,educação ambiental,ESG">
+  <meta name="author" content="ProgScript Equipe 6">
+
+  <link rel="icon" href="/src/client/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<!-- Header (reutilizado) -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="./index.html" class="brand" aria-label="Página inicial">
+      <img src="./assets/protoLogoBemUsado.png" width="100" height="60" alt="Logo Bem Usado">
+    </a>
+
+    <nav class="primary-nav" aria-label="Navegação principal">
+      <a href="./index.html" class="nav-link">Início</a>
+      <a href="#" class="nav-link">Aprenda</a>
+      <a href="listOfPosts.html" class="nav-link">Postagens</a>
+      <a href="#" class="nav-link">Me Ajude!</a>
+      <a href="#" class="nav-link">Contato</a>
+    </nav>
+
+    <button id="btn-acessibilidade" class="ghost-btn" aria-label="Acessibilidade e opções de cor" title="Acessibilidade e opções de cor">
+      Acessibilidade
+    </button>
+  </div>
+</header>
+
+<main id="conteudo" class="container main post-main">
+  <h1 class="section-title">POST</h1>
+  <p class="short-paragraph">Conteúdo selecionado da comunidade Bem Usado. Inspire-se com iniciativas reais e coloque em prática ações de redução, reutilização e reciclagem.</p>
+
+  <!-- Subnavegação fixa/flutuante (reuso) -->
+  <div class="subnav" role="search" aria-label="Buscar e refinar postagens">
+    <div class="subnav-inner">
+      <label class="sr-only" for="searchInPost">Buscar postagens</label>
+      <input id="searchInPost" type="search" class="subnav-search" placeholder="Buscar por palavra-chave…" aria-describedby="searchInPostHelp">
+      <div id="searchInPostHelp" class="sr-only">Digite uma palavra-chave e use os botões para filtrar e ordenar resultados.</div>
+      <div class="subnav-actions">
+        <button class="primary" type="button">Filtrar</button>
+        <button class="primary" type="button">Ordenar</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="post-layout">
+    <!-- Conteúdo do post -->
+    <article class="post-card" aria-labelledby="post-title">
+      <header class="post-header">
+        <h2 id="post-title" class="post-title">Como reduzir plásticos no dia a dia: um guia prático</h2>
+        <div class="post-meta">
+          <div class="author">
+            <img class="avatar" src="https://i.pravatar.cc/80?img=8" width="40" height="40" alt="Avatar do autor">
+            <span class="username">@eco_maria</span>
+          </div>
+          <time class="date" datetime="2025-09-21">21 set 2025</time>
+        </div>
+      </header>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <div class="post-content">
+        <p>Reduzir plásticos não é apenas uma tendência: é uma necessidade. Pequenas mudanças no cotidiano podem diminuir drasticamente a geração de resíduos, sem abrir mão de praticidade.</p>
+        <p>Comece observando o que você consome com mais frequência. Embalagens, talheres descartáveis e sacolas são alguns vilões invisíveis que passam despercebidos na rotina.</p>
+
+        <figure class="content-figure">
+          <img src="./assets/carrinhoCompras.png" alt="Carrinho com produtos sustentáveis">
+          <figcaption class="sr-only">Exemplo de compras com foco em embalagens retornáveis.</figcaption>
+        </figure>
+
+        <p>Trocar embalagens de uso único por alternativas retornáveis é uma ação direta. Prefira refis, compre a granel e valorize marcas que oferecem logística reversa.</p>
+        <p>Levar sua garrafa e caneco pode evitar dezenas de copos por mês. Além de reduzir lixo, você economiza e fortalece hábitos mais conscientes.</p>
+
+        <figure class="content-figure">
+          <img src="./assets/sucata.png" alt="Materiais separados para reciclagem">
+          <figcaption class="sr-only">Materiais destinados à reciclagem, como metal e plástico.</figcaption>
+        </figure>
+
+        <p>Por fim, quando a redução não for possível, opte pela reutilização e, como última alternativa, a reciclagem. Escolha pontos de coleta confiáveis e verifique o que é aceito na sua região.</p>
+      </div>
+
+      <footer class="post-footer">
+        <div class="hashtags" aria-label="Hashtags do post">
+          <a href="#" class="tag">#reduzir</a>
+          <a href="#" class="tag">#menosplastico</a>
+          <a href="#" class="tag">#economiacircular</a>
+          <a href="#" class="tag">#reutilizar</a>
+          <a href="#" class="tag">#reciclar</a>
+        </div>
+      </footer>
+    </article>
+
+    <!-- Barra flutuante de ações -->
+    <aside class="post-actions" aria-label="Ações rápidas">
+      <div class="actions-float" role="group" aria-label="Ações">
+        <button class="af-btn like" aria-pressed="false" aria-label="Curtir">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="heart" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          <span class="af-count" aria-live="polite">1.2k</span>
+        </button>
+        <div class="af-sep" aria-hidden="true"></div>
+        <button class="af-btn copy" aria-label="Copiar link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 13a5 5 0 0 1 7.07 0l1.41 1.41a5 5 0 1 1-7.07 7.07l-1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11a5 5 0 0 0-7.07 0L5.5 12.43a5 5 0 1 0 7.07 7.07L14 18.09" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="af-sep" aria-hidden="true"></div>
+        <button class="af-btn share" aria-label="Compartilhar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l-4-4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="af-sep" aria-hidden="true"></div>
+        <div class="kebab-wrap">
+          <button class="af-btn kebab" aria-haspopup="menu" aria-expanded="false" aria-controls="kebab-menu" aria-label="Mais opções">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+          </button>
+          <div id="kebab-menu" class="kebab-menu" role="menu" aria-label="Opções">
+            <button class="k-item report" role="menuitem">Reportar</button>
+            <button class="k-item save" role="menuitem">Salvar página</button>
+            <a class="k-item contact" role="menuitem" href="mailto:eco_maria@example.com?subject=Contato%20sobre%20seu%20post">Contatar autor</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<!-- Footer (reutilizado) -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Sobre nós</h4>
+      <ul>
+        <li><a href="#">Conheça a gente</a></li>
+        <li><a href="#">ESG</a></li>
+        <li><a href="#">Quem colabora</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Buscas</h4>
+      <ul>
+        <li><a href="#">Artigos sobre redução</a></li>
+        <li><a href="#">Artigos sobre reutilização</a></li>
+        <li><a href="#">Artigos sobre reciclagem</a></li>
+        <li><a href="#">Pontos de coleta</a></li>
+        <li><a href="#">Colaboradores</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ajuda</h4>
+      <ul>
+        <li><a href="#">Relatar problema</a></li>
+        <li><a href="#">Quero ser colaborador</a></li>
+        <li><a href="#">Dúvidas frequentes</a></li>
+        <li><a href="#">Informações técnicas</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#">Conheça a equipe</a></li>
+        <li><a href="#">Redes sociais</a></li>
+        <li><a href="#">Projeto do site</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <small>© 2025 Bem Usado — Todos os direitos reservados • <a href="#">Privacidade</a> • <a href="#">Termos de Uso</a></small>
+  </div>
+</footer>
+
+<script type="module" src="./post.js"></script>
+</body>
+</html>
