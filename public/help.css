@@ -4,8 +4,8 @@
 /* Toast (reutilizado via utils.showToast) for potential reuse on this page too */
 .toast-container {
     position: fixed;
-    top: 12px;
-    right: 12px;
+    top: 80px;
+    right: 80px;
     display: grid;
     gap: .5rem;
     z-index: 1000;
@@ -23,11 +23,11 @@
 }
 
 .toast.ok {
-    background: #14532d;
+    background: var(--primary-600);
 }
 
 .toast.err {
-    background: #7f1d1d;
+    background: var(--accent);
 }
 
 .toast.show {
@@ -48,6 +48,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
+    align-items: start;
 }
 
 .faq-item {
@@ -56,6 +57,7 @@
     border-radius: .9rem;
     overflow: hidden;
     box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
+    align-self: start;
 }
 
 .faq-q {
