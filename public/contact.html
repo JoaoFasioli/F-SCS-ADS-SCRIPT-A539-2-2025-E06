@@ -3,79 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem Usado — Reportar Problema</title>
-    <meta name="description" content="Conte para nós o que está acontecendo na plataforma Bem Usado.">
-    <meta name="keywords" content="reportar,problema,denúncia,bug,plataforma,bem usado">
-    <meta name="author" content="ProgScript Equipe 6">
-
+    <title>Bem Usado — Contato</title>
+    <meta name="description" content="Fale com a equipe do Bem Usado e encontre nossas redes.">
     <link rel="icon" href="/src/client/assets/icons/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
     <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
 
-    <!-- Base/shared styles -->
     <link rel="stylesheet" href="./styles.css">
-    <!-- Page-scoped styles to reduce acoplamento -->
-    <link rel="stylesheet" href="./report.css">
-    <!-- Needed for utils.js -->
-    <link rel="stylesheet" href="./help.css">
+    <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-<!-- Header (reutilizado) -->
 <header class="site-header">
     <div class="container header-inner">
         <a href="./index.html" class="brand" aria-label="Página inicial">
             <img src="./assets/protoLogoBemUsado.png" width="100" height="60" alt="Logo Bem Usado">
         </a>
-
         <nav class="primary-nav" aria-label="Navegação principal">
             <a href="./index.html" class="nav-link">Início</a>
             <a href="./learn.html" class="nav-link">Aprenda</a>
             <a href="./listOfPosts.html" class="nav-link">Postagens</a>
-            <a href="./help.html" class="nav-link" aria-current="page">Me Ajude!</a>
-            <a href="./contact.html" class="nav-link">Contato</a>
+            <a href="./help.html" class="nav-link">Me Ajude!</a>
+            <a href="./contact.html" class="nav-link" aria-current="page">Contato</a>
         </nav>
-
-        <button id="btn-acessibilidade" class="ghost-btn" aria-label="Acessibilidade e opções de cor"
-                title="Acessibilidade e opções de cor">
-            Acessibilidade
-        </button>
+        <button class="ghost-btn" aria-label="Acessibilidade e opções de cor">Acessibilidade</button>
     </div>
 </header>
 
-<!-- Main -->
-<main id="conteudo" class="container main report-main">
-    <article class="report-card" aria-labelledby="report-title">
-        <h1 id="report-title" class="report-title">Reportar Problema</h1>
-        <p>Conte para nós o que está acontecendo: preencha o campo abaixo e envie para a nossa equipe.</p>
+<main id="conteudo" class="container main contact-main">
+    <h1 class="section-title">Contato</h1>
 
-        <hr class="divider" aria-hidden="true"/>
+    <section id="equipe" class="c-section anchor">
+        <h2 class="kicker">Conheça a equipe</h2>
+        <p>Somos estudantes desenvolvendo este projeto de graduação com o apoio de professores e parceiros da
+            comunidade.
+            Nosso objetivo é transformar conhecimento em ação sustentável, com uma plataforma aberta e acessível.</p>
+    </section>
 
-        <div class="report-field">
-            <label class="report-label" for="issue-text">Descreva o problema<span class="req"
-                                                                                  aria-hidden="true">*</span></label>
-            <textarea id="issue-text" class="report-textarea"
-                      placeholder="Escreva aqui suas queixas sobre qualquer assunto que envolva a nossa plataforma: usuários maliciosos, bugs, desinformações..."></textarea>
+    <section id="redes" class="c-section anchor">
+        <h2 class="kicker">Redes sociais</h2>
+        <div class="table-wrap" role="region" aria-label="Contatos da equipe">
+            <table class="contacts">
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ana Silva</td>
+                    <td>ana.silva@bemusado.com</td>
+                </tr>
+                <tr>
+                    <td>Bruno Souza</td>
+                    <td>bruno.souza@bemusado.com</td>
+                </tr>
+                <tr>
+                    <td>Carla Nunes</td>
+                    <td>carla.nunes@bemusado.com</td>
+                </tr>
+                <tr>
+                    <td>Diego Ramos</td>
+                    <td>diego.ramos@bemusado.com</td>
+                </tr>
+                <tr>
+                    <td>Elaine Costa</td>
+                    <td>elaine.costa@bemusado.com</td>
+                </tr>
+                <tr>
+                    <td>Felipe Moreira</td>
+                    <td>felipe.moreira@bemusado.com</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="2">Atualizaremos os contatos oficiais em breve.</td>
+                </tr>
+                </tfoot>
+            </table>
         </div>
+    </section>
 
-        <div class="hint" role="note" aria-labelledby="hint-title">
-            <strong id="hint-title">Dicas de formatação</strong>
-            <ul>
-                <li>Mencione usuários com <code>@nomeDoUsuário</code></li>
-                <li>Mencione posts com <code>&amp;títuloDoPost</code> (deve pertencer ao <code>@nomeDoUsuário</code>)
-                </li>
-                <li>Você pode colar links diretamente na mensagem</li>
-            </ul>
-        </div>
-
-        <div class="actions">
-            <button id="send-issue" class="primary" type="button">Enviar problema</button>
-        </div>
-    </article>
+    <section id="projeto" class="c-section anchor">
+        <h2 class="kicker">Projeto do site</h2>
+        <p>O código-fonte do Bem Usado está disponível publicamente: <a href="https://github.com/" rel="noopener"
+                                                                        target="_blank">Repositório no GitHub</a>.</p>
+    </section>
 </main>
 
-<!-- Footer -->
 <footer class="site-footer">
     <div class="container footer-grid">
         <div>
@@ -118,8 +135,5 @@
                 href="#">Termos</a></small>
     </div>
 </footer>
-
-<!-- Page script (module for better encapsulation) -->
-<script type="module" src="./report.js"></script>
 </body>
 </html>

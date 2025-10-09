@@ -12,7 +12,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     color: var(--text);
-    background: linear-gradient(90deg, rgba(211, 233, 218, 0.92), rgba(219, 229, 244, 0.95));
+    background: linear-gradient(90deg, rgba(226, 233, 211, 0.92), rgba(219, 229, 244, 0.95));
     background-blend-mode: overlay;
     line-height: 1.6;
 }
@@ -912,3 +912,4 @@ img {
         display: none;
     }
 }
+

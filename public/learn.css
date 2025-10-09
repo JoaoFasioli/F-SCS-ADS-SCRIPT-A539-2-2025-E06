@@ -1,0 +1,80 @@
+/* Aprenda — estilos locais */
+.learn-main {
+    padding-top: 1rem;
+}
+
+.learn-section {
+    margin: 1.25rem 0 2rem;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+    box-shadow: 0 0 10px rgba(40, 76, 43, .06);
+}
+
+.anchor {
+    scroll-margin-top: 96px;
+}
+
+.ls-header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.ls-pill {
+    background: var(--primary-50);
+    color: var(--primary-600);
+    border: 1px solid var(--border);
+    padding: .15rem .5rem;
+    border-radius: 999px;
+}
+
+.ls-block {
+    border-top: 1px dashed var(--border);
+    padding-top: .75rem;
+    margin-top: .75rem;
+}
+
+.impact-grid {
+    display: grid;
+    gap: .75rem;
+}
+
+@media (min-width: 900px) {
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tips-articles {
+    display: grid;
+    gap: 1rem;
+    margin-top: .75rem;
+}
+
+@media (min-width: 900px) {
+    .tips-articles {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.col {
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    padding: .75rem;
+    background: #fff;
+}
+
+.acc {
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    padding: .5rem .6rem;
+    margin: .4rem 0;
+    background: #fff;
+}
+
+.acc > summary {
+    cursor: pointer;
+    font-weight: 600;
+}

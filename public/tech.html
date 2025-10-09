@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Usado — Informações Técnicas</title>
+    <meta name="description" content="Conheça as tecnologias que fazem o Bem Usado funcionar.">
+    <link rel="icon" href="/src/client/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./tech.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="Página inicial">
+            <img src="./assets/protoLogoBemUsado.png" width="100" height="60" alt="Logo Bem Usado">
+        </a>
+        <nav class="primary-nav" aria-label="Navegação principal">
+            <a href="./index.html" class="nav-link">Início</a>
+            <a href="./learn.html" class="nav-link">Aprenda</a>
+            <a href="./listOfPosts.html" class="nav-link">Postagens</a>
+            <a href="./help.html" class="nav-link">Me Ajude!</a>
+            <a href="./contact.html" class="nav-link">Contato</a>
+        </nav>
+        <button class="ghost-btn">Acessibilidade</button>
+    </div>
+</header>
+
+<main class="container main tech-main">
+    <h1 class="section-title">INFORMAÇÕES TÉCNICAS</h1>
+    <p class="short-paragraph">Conheça as tecnologias que fazem o Bem Usado funcionar.</p>
+
+    <div class="tech-layout">
+        <!-- Tree -->
+        <aside class="tree" aria-label="Tecnologias empregadas">
+            <h2 class="tree-title">Tecnologias Empregadas</h2>
+            <nav class="tree-nav">
+                <details open>
+                    <summary>Frontend</summary>
+                    <ul>
+                        <li><a href="#t-html">HTML</a></li>
+                        <li><a href="#t-css">CSS</a></li>
+                        <li><a href="#t-tailwind">Tailwind</a></li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Backend</summary>
+                    <ul>
+                        <li><a href="#t-ts">TypeScript</a></li>
+                        <li><a href="#t-node">NodeJS</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Infraestrutura</summary>
+                    <ul>
+                        <li><a href="#t-cloud">Cloud Systems</a></li>
+                        <li><a href="#t-ia">IA</a></li>
+                        <li><a href="#t-maps">Google Maps</a></li>
+                        <li><a href="#t-sgbd">SGBD</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Ferramentas Gráficas</summary>
+                    <ul>
+                        <li><a href="#t-gimp">GIMP</a></li>
+                        <li><a href="#t-inkscape">InkScape</a></li>
+                        <li><a href="#t-penpot">Penpot</a></li>
+                        <li><a href="#t-plantuml">PlantUML</a></li>
+                        <li><a href="#t-pastel">Pastel</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Segurança</summary>
+                    <ul>
+                        <li><a href="#t-ssl">HTTPS (SSL)</a></li>
+                        <li><a href="#t-crypto">Criptografia</a></li>
+                        <li><a href="#t-lgpd">LGPD Compliance</a></li>
+                    </ul>
+                </details>
+            </nav>
+            <p class="tree-foot"><em>Clique em qualquer tecnologia para ir à sua descrição detalhada</em></p>
+        </aside>
+
+        <!-- Content -->
+        <section class="tech-content">
+            <article id="t-html" class="t-card anchor"><h3>HTML</h3>
+                <p>HyperText Markup Language é a linguagem padrão para marcar e estruturar o conteúdo das páginas web.
+                    Utilizamos boas práticas semânticas para melhorar acessibilidade e SEO.</p></article>
+            <article id="t-css" class="t-card anchor"><h3>CSS</h3>
+                <p>Cascading Style Sheets é utilizado para estilização e layout visual dos elementos HTML, garantindo
+                    uma interface moderna e responsiva. O projeto usa uma paleta clara e alto contraste para leitura
+                    confortável.</p></article>
+            <article id="t-tailwind" class="t-card anchor"><h3>Tailwind</h3>
+                <p>Framework CSS utility‑first que pode acelerar prototipagem. Neste MVP priorizamos CSS próprio e leve,
+                    mas adotamos alguns princípios de utilidades para consistência.</p></article>
+            <article id="t-ts" class="t-card anchor"><h3>TypeScript</h3>
+                <p>Superset do JavaScript que adiciona tipagem estática, permitindo maior segurança e manutenibilidade
+                    do código, com detecção precoce de erros.</p></article>
+            <article id="t-node" class="t-card anchor"><h3>NodeJS</h3>
+                <p>Ambiente de execução JavaScript server‑side. Suporta automações, build e integração futura com
+                    serviços (APIs) quando o backend for necessário.</p></article>
+            <article id="t-cloud" class="t-card anchor"><h3>Cloud Systems: Cloudinary</h3>
+                <p>Serviços de computação em nuvem para hospedagem e processamento escalável. Em fases posteriores
+                    possibilitam CI/CD e storage de conteúdo.</p></article>
+            <article id="t-ia" class="t-card anchor"><h3>IA (Inteligência Artificial)</h3>
+                <p>Base do assistente inteligente para processar consultas dos usuários sobre reciclagem, reutilização e
+                    redução de materiais.</p></article>
+            <article id="t-maps" class="t-card anchor"><h3>Google Maps</h3>
+                <p>Suporte futuro para localização de pontos de coleta e reciclagem próximos aos usuários.</p></article>
+            <article id="t-sgbd" class="t-card anchor"><h3>SGBD: PostgreSQL</h3>
+                <p>Sistema Gerenciador de Banco de Dados responsável por armazenar conteúdos, usuários e configurações
+                    quando a aplicação evoluir para dinâmica.</p></article>
+            <article id="t-gimp" class="t-card anchor"><h3>GIMP</h3>
+                <p>Ferramenta open‑source para edição de imagens e criação de elementos visuais do site.</p></article>
+            <article id="t-inkscape" class="t-card anchor"><h3>InkScape</h3>
+                <p>Editor de gráficos vetoriais utilizado na criação de logos, ícones e elementos escaláveis.</p>
+            </article>
+            <article id="t-penpot" class="t-card anchor"><h3>Penpot</h3>
+                <p>Plataforma de design open‑source para prototipagem colaborativa de interfaces.</p></article>
+            <article id="t-plantuml" class="t-card anchor"><h3>PlantUML</h3>
+                <p>Ferramenta para diagramas UML a partir de linguagem textual, útil para documentação técnica.</p>
+            </article>
+            <article id="t-pastel" class="t-card anchor"><h3>Pastel</h3>
+                <p>Software para seleção de paletas de cores e consistência visual.</p></article>
+            <article id="t-ssl" class="t-card anchor"><h3>HTTPS (SSL)</h3>
+                <p>Protocolo seguro que garante criptografia na comunicação entre usuário e servidor.</p></article>
+            <article id="t-crypto" class="t-card anchor"><h3>Criptografia</h3>
+                <p>Técnicas aplicadas ao armazenamento de dados sensíveis, como hashing com salt para senhas.</p>
+            </article>
+            <article id="t-lgpd" class="t-card anchor"><h3>LGPD Compliance</h3>
+                <p>Conformidade com a Lei Geral de Proteção de Dados por meio de princípios de Privacy by Design e by
+                    Default.</p></article>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>Sobre nós</h4>
+            <ul>
+                <li><a href="./about.html#conheca">Conheça a gente</a></li>
+                <li><a href="./about.html#esg">ESG</a></li>
+                <li><a href="./about.html#colabora">Quem colabora</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Buscas</h4>
+            <ul>
+                <li><a href="./learn.html#reduzir">Artigos sobre redução</a></li>
+                <li><a href="./learn.html#reutilizar">Artigos sobre reutilização</a></li>
+                <li><a href="./learn.html#reciclar">Artigos sobre reciclagem</a></li>
+                <li><a href="#">Pontos de coleta</a></li>
+                <li><a href="#">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Ajuda</h4>
+            <ul>
+                <li><a href="./report.html">Relatar problema</a></li>
+                <li><a href="./help.html">Dúvidas frequentes</a></li>
+                <li><a href="./tech.html">Informações técnicas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contato</h4>
+            <ul>
+                <li><a href="./contact.html#equipe">Conheça a equipe</a></li>
+                <li><a href="./contact.html#redes">Redes sociais</a></li>
+                <li><a href="./contact.html#projeto">Projeto do site</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="legal">
+        <small>© 2025 Bem Usado — Todos os direitos reservados • <a href="#">Privacidade</a> • <a
+                href="#">Termos</a></small>
+    </div>
+</footer>
+
+<script src="./tech.js" defer></script>
+</body>
+</html>

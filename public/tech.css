@@ -1,0 +1,91 @@
+/* Informações Técnicas — estilos locais */
+.tech-main {
+    padding-top: 1rem;
+}
+
+.tech-layout {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 980px) {
+    .tech-layout {
+        grid-template-columns: 320px 1fr;
+    }
+}
+
+.tree {
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    background: var(--surface);
+    padding: .75rem;
+    box-shadow: 0 0 10px rgba(40, 76, 43, .06);
+}
+
+.tree-title {
+    margin: .25rem .25rem .5rem;
+    font-weight: 700;
+}
+
+.tree-nav details {
+    padding: .25rem .5rem;
+    border-left: 2px solid var(--border);
+    margin-bottom: .25rem;
+}
+
+.tree-nav summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tree-nav ul {
+    margin: .25rem 0 .5rem 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.tree-nav li {
+    position: relative;
+    margin: .2rem 0;
+}
+
+.tree-nav li::before {
+    content: '└';
+    color: #9ca3af;
+    position: absolute;
+    left: -1rem;
+}
+
+.tree-nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: .1rem .2rem;
+    border-radius: .35rem;
+}
+
+.tree-nav a:hover {
+    background: var(--primary-50);
+    color: var(--primary-600);
+}
+
+.tree-foot {
+    color: var(--muted);
+    margin-top: .25rem;
+}
+
+.tech-content {
+    display: grid;
+    gap: .75rem;
+}
+
+.t-card {
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    background: #fff;
+    padding: .8rem 1rem;
+}
+
+.anchor {
+    scroll-margin-top: 96px;
+}

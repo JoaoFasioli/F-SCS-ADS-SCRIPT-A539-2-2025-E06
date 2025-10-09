@@ -1,7 +1,6 @@
 // Small utilities to encourage reuse across pages without coupling
 // Query helpers
 export function qs(sel, el = document) { return el.querySelector(sel); }
-export function qsa(sel, el = document) { return [...el.querySelectorAll(sel)]; }
 
 // Clipboard helpers
 export async function copyToClipboard(text) {

@@ -1,0 +1,9 @@
+/* Contato — estilos locais */
+.contact-main { padding-top: 1rem; }
+.c-section { margin: 1rem 0 2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); padding: 1rem 1.25rem; box-shadow: 0 0 10px rgba(40,76,43,.06); }
+.anchor { scroll-margin-top: 96px; }
+.table-wrap { overflow-x: auto; }
+.contacts { width: 100%; border-collapse: collapse; }
+.contacts thead th { text-align: left; padding: .5rem .25rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.contacts tbody td { padding: .5rem .25rem; border-bottom: 1px solid var(--border); }
+.contacts tfoot td { padding: .5rem .25rem; border-top: 1px solid var(--border); color: var(--muted); }
