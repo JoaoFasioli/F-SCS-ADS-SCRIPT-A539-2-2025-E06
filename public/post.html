@@ -1,180 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bem Usado — Post</title>
-  <meta name="description" content="Post aberto do Bem Usado: exemplo de conteúdo com barra flutuante de ações.">
-  <meta name="keywords" content="post,sustentabilidade,3Rs,educação ambiental,ESG">
-  <meta name="author" content="ProgScript Equipe 6">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Usado — Post</title>
+    <meta name="description" content="Post aberto do Bem Usado: exemplo de conteúdo com barra flutuante de ações.">
+    <meta name="keywords" content="post,sustentabilidade,3Rs,educação ambiental,ESG">
+    <meta name="author" content="ProgScript Equipe 6">
 
-  <link rel="icon" href="/src/client/assets/icons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
+    <link rel="icon" href="/src/client/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
 
-  <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <!-- Header (reutilizado) -->
 <header class="site-header">
-  <div class="container header-inner">
-    <a href="./index.html" class="brand" aria-label="Página inicial">
-      <img src="./assets/protoLogoBemUsado.png" width="100" height="60" alt="Logo Bem Usado">
-    </a>
+    <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="Página inicial">
+            <img src="./assets/protoLogoBemUsado.png" width="100" height="60" alt="Logo Bem Usado">
+        </a>
 
-    <nav class="primary-nav" aria-label="Navegação principal">
-      <a href="./index.html" class="nav-link">Início</a>
-      <a href="#" class="nav-link">Aprenda</a>
-      <a href="listOfPosts.html" class="nav-link">Postagens</a>
-      <a href="#" class="nav-link">Me Ajude!</a>
-      <a href="#" class="nav-link">Contato</a>
-    </nav>
+        <nav class="primary-nav" aria-label="Navegação principal">
+            <a href="./index.html" class="nav-link">Início</a>
+            <a href="#" class="nav-link">Aprenda</a>
+            <a href="listOfPosts.html" class="nav-link">Postagens</a>
+            <a href="#" class="nav-link">Me Ajude!</a>
+            <a href="#" class="nav-link">Contato</a>
+        </nav>
 
-    <button id="btn-acessibilidade" class="ghost-btn" aria-label="Acessibilidade e opções de cor" title="Acessibilidade e opções de cor">
-      Acessibilidade
-    </button>
-  </div>
+        <button id="btn-acessibilidade" class="ghost-btn" aria-label="Acessibilidade e opções de cor"
+                title="Acessibilidade e opções de cor">
+            Acessibilidade
+        </button>
+    </div>
 </header>
 
 <main id="conteudo" class="container main post-main">
-  <h1 class="section-title">POST</h1>
-  <p class="short-paragraph">Conteúdo selecionado da comunidade Bem Usado. Inspire-se com iniciativas reais e coloque em prática ações de redução, reutilização e reciclagem.</p>
-
-  <!-- Subnavegação fixa/flutuante (reuso) -->
-  <div class="subnav" role="search" aria-label="Buscar e refinar postagens">
-    <div class="subnav-inner">
-      <label class="sr-only" for="searchInPost">Buscar postagens</label>
-      <input id="searchInPost" type="search" class="subnav-search" placeholder="Buscar por palavra-chave…" aria-describedby="searchInPostHelp">
-      <div id="searchInPostHelp" class="sr-only">Digite uma palavra-chave e use os botões para filtrar e ordenar resultados.</div>
-      <div class="subnav-actions">
-        <button class="primary" type="button">Filtrar</button>
-        <button class="primary" type="button">Ordenar</button>
-      </div>
+    <!-- Sub navegação fixa/flutuante (reuso) -->
+    <div class="subnav" role="search" aria-label="Buscar e refinar postagens">
+        <div class="subnav-inner">
+            <label class="sr-only" for="searchInPost">Buscar postagens</label>
+            <input id="searchInPost" type="search" class="subnav-search" placeholder="Buscar por palavra-chave…"
+                   aria-describedby="searchInPostHelp">
+            <div id="searchInPostHelp" class="sr-only">Digite uma palavra-chave e use os botões para filtrar e ordenar
+                resultados.
+            </div>
+            <div class="subnav-actions">
+                <button class="primary" type="button">Filtrar</button>
+                <button class="primary" type="button">Ordenar</button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <section class="post-layout">
-    <!-- Conteúdo do post -->
-    <article class="post-card" aria-labelledby="post-title">
-      <header class="post-header">
-        <h2 id="post-title" class="post-title">Como reduzir plásticos no dia a dia: um guia prático</h2>
-        <div class="post-meta">
-          <div class="author">
-            <img class="avatar" src="https://i.pravatar.cc/80?img=8" width="40" height="40" alt="Avatar do autor">
-            <span class="username">@eco_maria</span>
-          </div>
-          <time class="date" datetime="2025-09-21">21 set 2025</time>
-        </div>
-      </header>
+    <section class="post-layout">
+        <!-- Conteúdo do post -->
+        <article class="post-card" aria-labelledby="post-title">
+            <header class="post-header">
+                <h2 id="post-title" class="post-title">Como reduzir plásticos no dia a dia: um guia prático</h2>
+                <div class="post-meta">
+                    <div class="author">
+                        <img class="avatar"
+                             src="data:image/png;base64,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"
+                             width="40" height="40" alt="Avatar do autor">
+                        <span class="username">ONG Xô Plástico!</span>
+                    </div>
+                    <time class="date" datetime="2025-09-21">21 set 2025</time>
+                </div>
+            </header>
 
-      <div class="divider" role="separator" aria-hidden="true"></div>
+            <div class="divider" role="separator" aria-hidden="true"></div>
 
-      <div class="post-content">
-        <p>Reduzir plásticos não é apenas uma tendência: é uma necessidade. Pequenas mudanças no cotidiano podem diminuir drasticamente a geração de resíduos, sem abrir mão de praticidade.</p>
-        <p>Comece observando o que você consome com mais frequência. Embalagens, talheres descartáveis e sacolas são alguns vilões invisíveis que passam despercebidos na rotina.</p>
+            <div class="post-content">
+                <p>Reduzir plásticos não é apenas uma tendência: é uma necessidade. Pequenas mudanças no cotidiano podem
+                    diminuir drasticamente a geração de resíduos, sem renunciar à praticidade.</p>
+                <p>Comece observando o que você consome com mais frequência. Embalagens, talheres descartáveis e sacolas
+                    são alguns vilões invisíveis que passam despercebidos na rotina.</p>
 
-        <figure class="content-figure">
-          <img src="./assets/carrinhoCompras.png" alt="Carrinho com produtos sustentáveis">
-          <figcaption class="sr-only">Exemplo de compras com foco em embalagens retornáveis.</figcaption>
-        </figure>
+                <figure class="content-figure">
+                    <img src="./assets/carrinhoCompras.png" alt="Carrinho com produtos sustentáveis">
+                    <figcaption class="sr-only">Exemplo de compras com foco em embalagens retornáveis.</figcaption>
+                </figure>
 
-        <p>Trocar embalagens de uso único por alternativas retornáveis é uma ação direta. Prefira refis, compre a granel e valorize marcas que oferecem logística reversa.</p>
-        <p>Levar sua garrafa e caneco pode evitar dezenas de copos por mês. Além de reduzir lixo, você economiza e fortalece hábitos mais conscientes.</p>
+                <p>Trocar embalagens de uso único por alternativas retornáveis é uma ação direta. Prefira refis, compre
+                    a granel e valorize marcas que oferecem logística reversa.</p>
+                <p>Levar sua garrafa e caneco pode evitar dezenas de copos por mês. Além de reduzir lixo, você economiza
+                    e fortalece hábitos mais conscientes.</p>
 
-        <figure class="content-figure">
-          <img src="./assets/sucata.png" alt="Materiais separados para reciclagem">
-          <figcaption class="sr-only">Materiais destinados à reciclagem, como metal e plástico.</figcaption>
-        </figure>
+                <figure class="content-figure">
+                    <img src="./assets/sucata.png" alt="Materiais separados para reciclagem">
+                    <figcaption class="sr-only">Materiais destinados à reciclagem, como metal e plástico.</figcaption>
+                </figure>
 
-        <p>Por fim, quando a redução não for possível, opte pela reutilização e, como última alternativa, a reciclagem. Escolha pontos de coleta confiáveis e verifique o que é aceito na sua região.</p>
-      </div>
+                <p>Por fim, quando a redução não for possível, opte pela reutilização e, como última alternativa, a
+                    reciclagem. Escolha pontos de coleta confiáveis e verifique o que é aceito na sua região.</p>
+            </div>
 
-      <footer class="post-footer">
-        <div class="hashtags" aria-label="Hashtags do post">
-          <a href="#" class="tag">#reduzir</a>
-          <a href="#" class="tag">#menosplastico</a>
-          <a href="#" class="tag">#economiacircular</a>
-          <a href="#" class="tag">#reutilizar</a>
-          <a href="#" class="tag">#reciclar</a>
-        </div>
-      </footer>
-    </article>
+            <footer class="post-footer">
+                <div class="hashtags" aria-label="Hashtags do post">
+                    <a href="#" class="tag">#reduzir</a>
+                    <a href="#" class="tag">#menosplastico</a>
+                    <a href="#" class="tag">#economiacircular</a>
+                    <a href="#" class="tag">#reutilizar</a>
+                    <a href="#" class="tag">#reciclar</a>
+                </div>
+            </footer>
+        </article>
 
-    <!-- Barra flutuante de ações -->
-    <aside class="post-actions" aria-label="Ações rápidas">
-      <div class="actions-float" role="group" aria-label="Ações">
-        <button class="af-btn like" aria-pressed="false" aria-label="Curtir">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="heart" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-          <span class="af-count" aria-live="polite">1.2k</span>
-        </button>
-        <div class="af-sep" aria-hidden="true"></div>
-        <button class="af-btn copy" aria-label="Copiar link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 13a5 5 0 0 1 7.07 0l1.41 1.41a5 5 0 1 1-7.07 7.07l-1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11a5 5 0 0 0-7.07 0L5.5 12.43a5 5 0 1 0 7.07 7.07L14 18.09" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="af-sep" aria-hidden="true"></div>
-        <button class="af-btn share" aria-label="Compartilhar">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l-4-4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="af-sep" aria-hidden="true"></div>
-        <div class="kebab-wrap">
-          <button class="af-btn kebab" aria-haspopup="menu" aria-expanded="false" aria-controls="kebab-menu" aria-label="Mais opções">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
-          </button>
-          <div id="kebab-menu" class="kebab-menu" role="menu" aria-label="Opções">
-            <button class="k-item report" role="menuitem">Reportar</button>
-            <button class="k-item save" role="menuitem">Salvar página</button>
-            <a class="k-item contact" role="menuitem" href="mailto:eco_maria@example.com?subject=Contato%20sobre%20seu%20post">Contatar autor</a>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </section>
+        <!-- Barra flutuante de ações -->
+        <aside class="post-actions" aria-label="Ações rápidas">
+            <div class="actions-float" role="group" aria-label="Ações">
+                <button class="af-btn like" aria-pressed="false" aria-label="Curtir">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         aria-hidden="true">
+                        <path class="heart"
+                              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+
+                </button>
+                <span class="af-count" aria-live="polite">1.2k</span>
+                <div class="af-sep" aria-hidden="true"></div>
+                <button class="af-btn copy" aria-label="Copiar link">
+                    <?xml version="1.0"?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="1" id="_1"><path d="M149.67,393A95.49,95.49,0,0,1,82.11,230l64.7-64.7a95.65,95.65,0,0,1,135.1,0h0a95.65,95.65,0,0,1,0,135.11l-64.69,64.69A95.23,95.23,0,0,1,149.67,393Zm64.69-225.69A65.29,65.29,0,0,0,168,186.49l-64.7,64.7A65.53,65.53,0,0,0,196,343.86l64.7-64.7a65.51,65.51,0,0,0-46.34-111.84Z"/><path d="M295.9,360.71a95,95,0,0,1-24.13-3.1,15,15,0,0,1,7.6-29,65.52,65.52,0,0,0,62.87-17.08l64.7-64.69a65.53,65.53,0,0,0-92.68-92.68l-64.69,64.7a65.84,65.84,0,0,0-17.08,62.89,15,15,0,0,1-29,7.55,95.92,95.92,0,0,1,24.9-91.65l64.69-64.7A95.53,95.53,0,1,1,428.15,268l-64.69,64.69A94.92,94.92,0,0,1,295.9,360.71Z"/></g></svg>
+                </button>
+                <div class="af-sep" aria-hidden="true"></div>
+                <button class="af-btn share" aria-label="Compartilhar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         aria-hidden="true">
+                        <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 6l-4-4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M12 2v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="af-sep" aria-hidden="true"></div>
+                <div class="kebab-wrap">
+                    <button class="af-btn kebab" aria-haspopup="menu" aria-expanded="false" aria-controls="kebab-menu"
+                            aria-label="Mais opções">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="12" cy="5" r="1.5"/>
+                            <circle cx="12" cy="12" r="1.5"/>
+                            <circle cx="12" cy="19" r="1.5"/>
+                        </svg>
+                    </button>
+                    <div id="kebab-menu" class="kebab-menu" role="menu" aria-label="Opções">
+                        <button class="k-item report" role="menuitem">Reportar</button>
+                        <button class="k-item save" role="menuitem">Salvar página</button>
+                        <button class="k-item save" role="menuitem">Contatar autor</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
 </main>
 
 <!-- Footer (reutilizado) -->
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>Sobre nós</h4>
-      <ul>
-        <li><a href="#">Conheça a gente</a></li>
-        <li><a href="#">ESG</a></li>
-        <li><a href="#">Quem colabora</a></li>
-      </ul>
+    <div class="container footer-grid">
+        <div>
+            <h4>Sobre nós</h4>
+            <ul>
+                <li><a href="#">Conheça a gente</a></li>
+                <li><a href="#">ESG</a></li>
+                <li><a href="#">Quem colabora</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Buscas</h4>
+            <ul>
+                <li><a href="#">Artigos sobre redução</a></li>
+                <li><a href="#">Artigos sobre reutilização</a></li>
+                <li><a href="#">Artigos sobre reciclagem</a></li>
+                <li><a href="#">Pontos de coleta</a></li>
+                <li><a href="#">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Ajuda</h4>
+            <ul>
+                <li><a href="#">Relatar problema</a></li>
+                <li><a href="#">Quero ser colaborador</a></li>
+                <li><a href="#">Dúvidas frequentes</a></li>
+                <li><a href="#">Informações técnicas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contato</h4>
+            <ul>
+                <li><a href="#">Conheça a equipe</a></li>
+                <li><a href="#">Redes sociais</a></li>
+                <li><a href="#">Projeto do site</a></li>
+            </ul>
+        </div>
     </div>
-    <div>
-      <h4>Buscas</h4>
-      <ul>
-        <li><a href="#">Artigos sobre redução</a></li>
-        <li><a href="#">Artigos sobre reutilização</a></li>
-        <li><a href="#">Artigos sobre reciclagem</a></li>
-        <li><a href="#">Pontos de coleta</a></li>
-        <li><a href="#">Colaboradores</a></li>
-      </ul>
+    <div class="legal">
+        <small>© 2025 Bem Usado — Todos os direitos reservados • <a href="#">Privacidade</a> • <a href="#">Termos de
+            Uso</a></small>
     </div>
-    <div>
-      <h4>Ajuda</h4>
-      <ul>
-        <li><a href="#">Relatar problema</a></li>
-        <li><a href="#">Quero ser colaborador</a></li>
-        <li><a href="#">Dúvidas frequentes</a></li>
-        <li><a href="#">Informações técnicas</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contato</h4>
-      <ul>
-        <li><a href="#">Conheça a equipe</a></li>
-        <li><a href="#">Redes sociais</a></li>
-        <li><a href="#">Projeto do site</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="legal">
-    <small>© 2025 Bem Usado — Todos os direitos reservados • <a href="#">Privacidade</a> • <a href="#">Termos de Uso</a></small>
-  </div>
 </footer>
 
 <script type="module" src="./post.js"></script>

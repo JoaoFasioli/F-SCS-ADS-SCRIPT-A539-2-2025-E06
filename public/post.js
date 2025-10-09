@@ -1,4 +1,4 @@
-import { qs, qsa, copyToClipboard, shareOrCopy } from './js/utils.js';
+import { qs, copyToClipboard, shareOrCopy } from './js/utils.js';
 
 function ready(fn){ if(document.readyState !== 'loading') fn(); else document.addEventListener('DOMContentLoaded', fn); }
 
@@ -17,7 +17,7 @@ function setupFloatingActions(){
     likeBtn.classList.toggle('is-on', !pressed);
     // naive count mutation for mock
     const raw = (countSpan?.textContent || '0').trim().toLowerCase();
-    let base = 0;
+    let base;
     if(raw.endsWith('k')) base = Math.round(parseFloat(raw) * 1000);
     else base = parseInt(raw.replace(/\D/g,'')) || 0;
     base += pressed ? -1 : 1;
