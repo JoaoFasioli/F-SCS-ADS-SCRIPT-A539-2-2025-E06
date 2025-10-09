@@ -1,13 +1,13 @@
 /* Paleta padrão do site (light, alto contraste, foco em sustentabilidade e comunicação) */
-:root{
-  --bg: #f7f8f9;          /* fundo geral claro */
-  --surface: #ffffff;     /* cartões/superfícies */
-  --text: #1a1d1f;        /* texto principal */
-  --muted: #6b7280;       /* texto secundário */
-  --border: #e5e7eb;      /* linhas sutis */
-  --primary: rgba(35, 57, 46, 0.9);     /* verde destaque */
-  --primary-600:#3a5a40;  /* verde mais escuro (hover) */
-  --primary-50:#ecf7ee;   /* realce suave */
-  --accent: #f7b5a2;
-  --warning:#b45309;      /* eventual aviso */
+:root {
+    --bg: #f7f8f9; /* fundo geral claro */
+    --surface: #ffffff; /* cartões/superfícies */
+    --text: #1a1d1f; /* texto principal */
+    --muted: #6b7280; /* texto secundário */
+    --border: #e5e7eb; /* linhas sutis */
+    --primary: rgba(35, 57, 46, 0.9); /* verde destaque */
+    --primary-600: #3a5a40; /* verde mais escuro (hover) */
+    --primary-50: #ecf7ee; /* realce suave */
+    --accent: #f7b5a2;
+    --warning: #b45309; /* eventual aviso */
 }
