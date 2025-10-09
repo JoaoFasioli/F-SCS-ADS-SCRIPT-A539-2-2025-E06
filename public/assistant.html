@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSustentável — Resposta do Assistente</title>
+    <meta name="description"
+          content="Respostas personalizadas do assistente inteligente SOSustentável para suas dúvidas sobre sustentabilidade.">
+    <meta name="keywords" content="assistente,sustentabilidade,IA,reduzir,reutilizar,reciclar">
+    <meta name="author" content="ProgScript Equipe 6">
+
+    <link rel="icon" href="/src/client/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assistant.css">
+</head>
+<body>
+<!-- Header -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="Página inicial">
+            <img src="./assets/protoLogoBemUsado.png"
+                 width="100"
+                 height="60"
+                 alt="Logo Bem Usado">
+        </a>
+
+        <nav class="primary-nav" aria-label="Navegação principal">
+            <a href="./index.html" class="nav-link">Início</a>
+            <a href="./learn.html" class="nav-link">Aprenda</a>
+            <a href="./listOfPosts.html" class="nav-link">Postagens</a>
+            <a href="./help.html" class="nav-link">Me Ajude!</a>
+            <a href="./contact.html" class="nav-link">Contato</a>
+        </nav>
+
+        <button id="btn-acessibilidade" class="ghost-btn" aria-label="Acessibilidade e opções de cor"
+                title="Acessibilidade e opções de cor">
+            Acessibilidade
+        </button>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container assistant-main">
+
+    <!-- Query Summary Card -->
+    <section class="query-summary" aria-labelledby="query-title">
+        <h1 id="query-title" class="page-title">Resposta do SOSustentável</h1>
+        <div class="query-card">
+            <div class="query-badge" id="query-badge">
+                <span class="badge-icon">📋</span>
+                <span class="badge-text" id="badge-text">Carregando...</span>
+            </div>
+            <div class="query-material">
+                <span class="material-label">Material consultado:</span>
+                <span class="material-name" id="material-name">—</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Content -->
+    <section class="response-section" aria-labelledby="response-title">
+        <div class="response-card">
+            <h2 id="response-title" class="section-title">Orientações Personalizadas</h2>
+
+            <!-- Loading State -->
+            <div class="loading-state" id="loading-state">
+                <div class="spinner"></div>
+                <p>Processando sua solicitação...</p>
+            </div>
+
+            <!-- Response Content Container -->
+            <div class="response-content" id="response-content" style="display: none;">
+                <!-- JavaScript will populate-->
+            </div>
+
+            <!-- Map Container (only for recycling queries) -->
+            <div class="map-container" id="map-container" style="display: none;">
+                <h3 class="map-title">Pontos de Coleta Próximos</h3>
+                <div class="map-wrapper">
+                    <div id="map" class="map-canvas"></div>
+                </div>
+                <div class="map-legend">
+                    <p class="legend-item">
+                        <span class="legend-icon">📍</span>
+                        <span>Sua localização</span>
+                    </p>
+                    <p class="legend-item">
+                        <span class="legend-icon">♻️</span>
+                        <span>Pontos de coleta disponíveis</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actions -->
+    <section class="actions-section">
+        <div class="actions-row">
+            <a href="./index.html#assistente-inteligente" class="primary outline-btn">
+                ← Voltar para menu assistente
+            </a>
+            <button id="copy-response" class="primary">
+                Copiar resposta do SOSustentável
+            </button>
+        </div>
+    </section>
+
+    <!-- Related Articles (optional enhancement) -->
+    <section class="related-section" id="related-articles" style="display: none;">
+        <h2 class="section-title">Artigos Relacionados</h2>
+        <div class="related-grid" id="related-grid">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>Sobre nós</h4>
+            <ul>
+                <li><a href="./about.html#conheca">Conheça a gente</a></li>
+                <li><a href="./about.html#esg">ESG</a></li>
+                <li><a href="./about.html#colabora">Quem colabora</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Buscas</h4>
+            <ul>
+                <li><a href="./learn.html#reduzir">Artigos sobre redução</a></li>
+                <li><a href="./learn.html#reutilizar">Artigos sobre reutilização</a></li>
+                <li><a href="./learn.html#reciclar">Artigos sobre reciclagem</a></li>
+                <li><a href="#">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Ajuda</h4>
+            <ul>
+                <li><a href="./report.html">Relatar problema</a></li>
+                <li><a href="./help.html">Dúvidas frequentes</a></li>
+                <li><a href="./tech.html">Informações técnicas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contato</h4>
+            <ul>
+                <li><a href="./contact.html#equipe">Conheça a equipe</a></li>
+                <li><a href="./contact.html#redes">Redes sociais</a></li>
+                <li><a href="./contact.html#projeto">Projeto do site</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="legal">
+        <small>© 2025 Bem Usado — Todos os direitos reservados • <a href="#">Privacidade</a> • <a
+                href="#">Termos</a></small>
+    </div>
+</footer>
+
+<script src="./assistant.js" type="module"></script>
+</body>
+</html>

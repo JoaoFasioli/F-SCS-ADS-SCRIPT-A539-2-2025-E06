@@ -46,7 +46,9 @@ function setupRButtons() {
     })
 }
 
-// Assistente Inteligente
+// Updated Assistente Inteligente section for main.js
+// This replaces the existing setupAssistant() function
+
 function setupAssistant() {
     const panes = qs('#assistantPanes')
     const toggles = qsa('.toggle')
@@ -54,6 +56,11 @@ function setupAssistant() {
     const btnBuscar = qs('#buscarAjuda')
     const btnReset = qs('#reiniciarAssistente')
     const resp = qs('#resumo-resposta')
+
+    // Get the "Ver resposta completa" link
+    // We need to update the HTML to give it an ID, or we can select it by its text/position
+    // For now, let's select it as the second link in the actions div
+    const verRespostaLink = document.querySelector('.pane.answer .actions a[role="button"]')
 
     let intent = null
 
@@ -75,6 +82,7 @@ function setupAssistant() {
             setTimeout(() => textarea.style.borderColor = '', 700)
             return
         }
+
         // gera uma resposta curta simulada
         const mapa = {
             reduzir: 'reduzir o consumo',
@@ -82,6 +90,15 @@ function setupAssistant() {
             reciclar: 'reciclar corretamente'
         }
         resp.textContent = `Você escolheu ${mapa[intent]} para "${material}".\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel metus orci. Cras nec metus dui. Fusce interdum risus ut nisi dictum bibendum. Aliquam eu iaculis lectus. Curabitur eros arcu, porttitor ut tellus vitae, varius sollicitudin metus. Fusce iaculis congue leo, a pretium ante aliquet eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam et condimentum nunc.`
+
+        // Update the "Ver resposta completa" link with the query parameters
+        const params = new URLSearchParams({
+            intent: intent,
+            material: material
+        })
+        verRespostaLink.href = `./assistant.html?${params.toString()}`
+
+        // Show the answer pane
         panes.style.transform = 'translateX(-50%)'
     })
 
@@ -92,6 +109,9 @@ function setupAssistant() {
         textarea.disabled = true
         panes.style.transform = 'translateX(0)'
         resp.textContent = 'Preencha os dados para visualizar uma resposta.'
+
+        // Reset the link back to just a hash
+        verRespostaLink.href = '#'
     })
 }
 
