@@ -32,7 +32,7 @@ function setupRButtons() {
             const r = leaf.getAttribute('data-r')
             const t = textosR[r]
             if (!t) return
-            desc.innerHTML = `<div class="r-grid"><div class="r-copy"><div class="r-title">${t.titulo}</div><p>${t.texto}</p><div style="margin-top:.5rem"><a href="#" class="primary" role="button">Saiba Mais</a></div></div><div class="r-fig"><img src="./assets/Rpyramid.png" alt="Pirâmide dos 3 R's: prioridade para Reduzir, depois Reutilizar e por último Reciclar."></div></div>`
+            desc.innerHTML = `<div class="r-grid"><div class="r-copy"><div class="r-title">${t.titulo}</div><p>${t.texto}</p><div style="margin-top:.5rem"><a href="./learn.html" class="primary" role="button">Saiba Mais</a></div></div><div class="r-fig"><img src="./assets/Rpyramid.png" alt="Pirâmide dos 3 R's: prioridade para Reduzir, depois Reutilizar e por último Reciclar."></div></div>`
             desc.classList.add('show')
         }
 
