@@ -1,0 +1,136 @@
+/* Me Ajude! — estilos específicos
+   Mantém separação de contexto para evitar acoplamento com outras páginas. */
+
+/* Toast (reutilizado via utils.showToast) for potential reuse on this page too */
+.toast-container {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    display: grid;
+    gap: .5rem;
+    z-index: 1000;
+}
+
+.toast {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity .2s ease, transform .2s ease;
+    background: #0f172a;
+    color: #fff;
+    padding: .6rem .8rem;
+    border-radius: .6rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .18);
+}
+
+.toast.ok {
+    background: #14532d;
+}
+
+.toast.err {
+    background: #7f1d1d;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: none;
+}
+
+.help-main {
+    padding-top: 1.25rem;
+}
+
+/* Dúvidas Frequentes */
+.faq-section {
+    margin-top: .5rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: .9rem;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
+}
+
+.faq-q {
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    border: 0;
+    padding: .9rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    cursor: pointer;
+}
+
+.faq-q:hover, .faq-q:focus-visible {
+    background: var(--primary-50);
+    outline: none;
+}
+
+.faq-q .chev {
+    transition: transform .2s ease;
+}
+
+.faq-item[open] .faq-q .chev {
+    transform: rotate(180deg);
+}
+
+.faq-a {
+    border-top: 1px dashed var(--border);
+    padding: .75rem 1rem;
+    color: var(--text);
+}
+
+@media (max-width: 900px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CTA extra ajuda */
+.more-help {
+    margin-top: 1.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .06);
+}
+
+.more-list {
+    display: grid;
+    gap: .5rem;
+}
+
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    width: 100%;
+    padding: .7rem .9rem;
+    border-radius: .8rem;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.more-btn:hover, .more-btn:focus-visible {
+    border-color: var(--primary-600);
+    background: var(--primary-50);
+    outline: none;
+}
+
+.chev-r {
+    margin-left: auto;
+    opacity: .6;
+}

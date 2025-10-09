@@ -1,0 +1,109 @@
+/* Reportar Problema — estilos específicos da página
+   Escopo: apenas elementos dentro de .report-main para evitar acoplamento.
+   Mantém a base visual (cores, container, tipografia) do site. */
+
+/* Toast (reutilizado via utils.showToast). Duplicado aqui para manter este arquivo autocontido. */
+.toast-container {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    display: grid;
+    gap: .5rem;
+    z-index: 1000;
+}
+
+.toast {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity .2s ease, transform .2s ease;
+    background: #0f172a;
+    color: #fff;
+    padding: .6rem .8rem;
+    border-radius: .6rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .18);
+}
+
+.toast.ok {
+    background: #14532d;
+}
+
+.toast.err {
+    background: #7f1d1d;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: none;
+}
+
+.report-main {
+    padding-top: 1.25rem;
+}
+
+.report-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .06);
+}
+
+.report-title {
+    margin: .25rem 0 .5rem;
+    font-size: clamp(1.25rem, 1.2vw + 1rem, 1.8rem);
+}
+
+.report-field {
+    display: grid;
+    gap: .35rem;
+    margin-top: .75rem;
+}
+
+.report-label {
+    font-weight: 600;
+}
+
+.report-label .req {
+    color: #b91c1c;
+    margin-left: .15rem;
+}
+
+.report-textarea {
+    width: 100%;
+    min-height: 160px;
+    resize: vertical;
+    padding: .75rem;
+    border: 1px solid var(--border);
+    border-radius: .6rem;
+}
+
+.report-textarea:focus {
+    outline: none;
+    border-color: var(--primary-600);
+    box-shadow: 0 0 0 3px var(--primary-50);
+}
+
+.hint {
+    margin-top: .5rem;
+    background: #f8fafc;
+    border: 1px dashed var(--border);
+    border-radius: .6rem;
+    padding: .6rem .75rem;
+    color: var(--muted);
+}
+
+.hint strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.hint ul {
+    margin: .35rem 0 0;
+    padding-left: 1.25rem;
+}
+
+.actions {
+    margin-top: .85rem;
+    display: flex;
+    gap: .5rem;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Usado — Me Ajude!</title>
+    <meta name="description" content="Central de ajuda do Bem Usado com dúvidas frequentes e caminhos rápidos.">
+    <meta name="keywords" content="ajuda,faq,suporte,3Rs,plataforma,bem usado">
+    <meta name="author" content="ProgScript Equipe 6">
+
+    <link rel="icon" href="/src/client/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/client/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/client/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/client/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/src/client/assets/icons/site.webmanifest">
+
+    <!-- Base site styles (header/footer, layout) -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Page-scoped styles (FAQ grid, CTAs) -->
+    <link rel="stylesheet" href="./help.css">
+</head>
+<body>
+<!-- Header (reutilizado) -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="Página inicial">
+            <img src="./assets/protoLogoBemUsado.png" width="100" height="60" alt="Logo Bem Usado">
+        </a>
+
+        <nav class="primary-nav" aria-label="Navegação principal">
+            <a href="./index.html" class="nav-link">Início</a>
+            <a href="#" class="nav-link">Aprenda</a>
+            <a href="./listOfPosts.html" class="nav-link">Postagens</a>
+            <a href="./help.html" class="nav-link" aria-current="page">Me Ajude!</a>
+            <a href="#" class="nav-link">Contato</a>
+        </nav>
+
+        <button id="btn-acessibilidade" class="ghost-btn" aria-label="Acessibilidade e opções de cor"
+                title="Acessibilidade e opções de cor">Acessibilidade
+        </button>
+    </div>
+</header>
+
+<main id="conteudo" class="container main help-main">
+    <h1 class="section-title">COMO PODEMOS AJUDAR?</h1>
+
+    <!-- Dúvidas frequentes -->
+    <section class="faq-section" aria-labelledby="faq-title">
+        <h2 id="faq-title" class="kicker">Dúvidas frequentes</h2>
+
+        <div class="faq-grid">
+            <!-- Item 1 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Como posso me tornar um colaborador?</span><span class="chev">▾</span>
+                </summary>
+                <div class="faq-a">Crie uma conta, complete seu perfil e acesse a opção “Quero ser colaborador”. Lá você
+                    encontrará os critérios, o termo de colaboração e o formulário de envio. Nossa equipe revisa e
+                    responde por e‑mail.
+                </div>
+            </details>
+
+            <!-- Item 2 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>O site é gratuito?</span><span class="chev">▾</span></summary>
+                <div class="faq-a">Sim. O acesso ao conteúdo, às buscas e às ferramentas educativas é gratuito. Não
+                    utilizamos anúncios intrusivos e seguimos boas práticas de privacidade.
+                </div>
+            </details>
+
+            <!-- Item 3 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Como funciona o sistema de busca de materiais?</span><span
+                        class="chev">▾</span></summary>
+                <div class="faq-a">Você informa o material e o objetivo (reduzir, reutilizar ou reciclar). O assistente
+                    cruza nossa base editorial com fontes públicas e contribuições verificadas, podendo sugerir pontos
+                    de coleta quando a localização for permitida.
+                </div>
+            </details>
+
+            <!-- Item 4 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Posso salvar postagens para ler depois?</span><span class="chev">▾</span>
+                </summary>
+                <div class="faq-a">Sim. Use o menu de opções (⋮) da postagem e escolha “Salvar página”. O item fica
+                    disponível no seu navegador e, quando logado, será sincronizado com sua conta (recurso em expansão).
+                </div>
+            </details>
+
+            <!-- Item 5 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Como encontro pontos de coleta para reciclagem?</span><span
+                        class="chev">▾</span></summary>
+                <div class="faq-a">No Assistente Inteligente, selecione “reciclar”, informe o material e permita o uso
+                    da localização. Indicamos iniciativas locais, programas municipais e parceiros confiáveis na sua
+                    região.
+                </div>
+            </details>
+
+            <!-- Item 6 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Como reporto um conteúdo inadequado?</span><span class="chev">▾</span>
+                </summary>
+                <div class="faq-a">Abra a postagem, clique no botão (⋮) e selecione “Reportar problema”. Você também
+                    pode ir direto à página <a href="./report.html">Reportar Problema</a> e descrever o ocorrido.
+                </div>
+            </details>
+
+            <!-- Item 7 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Como os dados dos colaboradores são armazenados?</span><span
+                        class="chev">▾</span></summary>
+                <div class="faq-a">Armazenamos somente os dados necessários, com criptografia em repouso e em trânsito.
+                    O acesso é restrito e seguimos a LGPD. Você pode solicitar remoção ou portabilidade dos seus dados.
+                </div>
+            </details>
+
+            <!-- Item 8 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Quais são os critérios para publicação?</span><span class="chev">▾</span>
+                </summary>
+                <div class="faq-a">Conteúdos originais e verificáveis, alinhados à educação ambiental e à economia
+                    circular, sem plágio, discurso de ódio ou promoção de práticas nocivas. Todo material passa por
+                    revisão.
+                </div>
+            </details>
+
+            <!-- Item 9 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>Como entro em contato com a equipe?</span><span class="chev">▾</span>
+                </summary>
+                <div class="faq-a">Use a seção “Contato” (menu superior) ou os canais indicados no rodapé. Respondemos
+                    quanto antes, conforme a fila de atendimentos.
+                </div>
+            </details>
+
+            <!-- Item 10 -->
+            <details class="faq-item">
+                <summary class="faq-q"><span>O que vocês fazem com o acesso à minha localização?</span><span
+                        class="chev">▾</span></summary>
+                <div class="faq-a">A localização é opcional e usada apenas para melhorar recomendações (ex.: pontos de
+                    coleta). Não armazenamos sua posição exata; quando necessário, tratamos em áreas agregadas e você
+                    pode desativar a qualquer momento.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Precisa de mais ajuda? -->
+    <section class="more-help" aria-labelledby="more-help-title">
+        <h2 id="more-help-title" class="kicker">Precisa de mais ajuda?</h2>
+        <div class="more-list">
+            <a class="more-btn" href="#"><span>Quero ser um colaborador de Bem Usado</span><span class="chev-r">→</span></a>
+            <a class="more-btn" href="#"><span>Quero consultar informações técnicas do Bem Usado</span><span
+                    class="chev-r">→</span></a>
+            <a class="more-btn" href="./report.html"><span>Quero relatar um problema com o Bem Usado</span><span
+                    class="chev-r">→</span></a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer (reutilizado) -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="col">
+            <h4>Sobre nós</h4>
+            <ul>
+                <li><a href="#">Conheça a gente</a></li>
+                <li><a href="#">ESG</a></li>
+                <li><a href="#">Quem colabora</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Buscas</h4>
+            <ul>
+                <li><a href="#">Artigos sobre redução</a></li>
+                <li><a href="#">Artigos sobre reutilização</a></li>
+                <li><a href="#">Artigos sobre reciclagem</a></li>
+                <li><a href="#">Pontos de coleta</a></li>
+                <li><a href="#">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Ajuda</h4>
+            <ul>
+                <li><a href="./report.html">Relatar problema</a></li>
+                <li><a href="#">Quero ser colaborador</a></li>
+                <li><a href="./help.html">Dúvidas frequentes</a></li>
+                <li><a href="#">Informações técnicas</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Contato</h4>
+            <ul>
+                <li><a href="#">Conheça a equipe</a></li>
+                <li><a href="#">Redes sociais</a></li>
+                <li><a href="#">Projeto do site</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="legal">
+        <p>© 2025 Bem Usado. Todos os direitos reservados. <a href="#">Política de Privacidade</a> • <a href="#">Termos
+            de Uso</a></p>
+    </div>
+</footer>
+
+<script type="module" src="./help.js"></script>
+</body>
+</html>
